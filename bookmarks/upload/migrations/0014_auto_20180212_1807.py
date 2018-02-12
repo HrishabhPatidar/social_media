@@ -20,6 +20,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='imageupload',
             name='user_like',
-            field=models.IntegerField(blank=True, default=0, verbose_name='auth.User'),
+            field=models.IntegerField(blank=True, verbose_name='auth.User'),
         ),
     ]

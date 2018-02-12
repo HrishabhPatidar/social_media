@@ -21,10 +21,10 @@
 
    
 {{image.caption}}
-<a href="{% url 'upload:detail'%}">
+<a href="{{ image.get_absolute_url }}">
 <img src="{{image.image.url}}"></a>
 
-<button>like</button>
+
 
 
 

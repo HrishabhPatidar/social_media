@@ -5,6 +5,6 @@ from django.contrib import admin
 from .models import ImageUpload
 
 class UploadAdmin(admin.ModelAdmin):
-    list_display = ('user','caption','user_like')
+    list_display = ('user','caption')
 
 admin.site.register(ImageUpload, UploadAdmin)

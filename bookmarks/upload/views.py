@@ -35,7 +35,7 @@ def uploadation(request):
 
 def image_detail(request, id, slug):
     image = get_object_or_404(ImageUpload, id=id, slug=slug)
-    return render(request,'images/image/detail.html',{'section': 'images','image': image})
+    return render(request,'upload/detail.html',{'section': 'upload','image': image})
 
 
 @login_required
